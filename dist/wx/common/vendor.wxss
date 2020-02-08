@@ -1,0 +1,12 @@
+
+.news-label {
+  font-size: 30rpx;
+  text-align: left;
+  margin-bottom: 4rpx;
+}
+.news-text {
+  font-size: 20rpx;
+  color: gray;
+  text-align: left;
+  margin-bottom: 4rpx;
+}

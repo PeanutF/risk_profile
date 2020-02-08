@@ -1,0 +1,37 @@
+<template name="4cea7b4a">
+  <view class="_div data-v-942b4cde">
+    <i-row class="_i-row data-v-942b4cde">
+      <i-col span="12" class="_i-col data-v-942b4cde">
+        <view class="_div data-v-942b4cde">
+          <picker value="{{date}}" class="_picker data-v-942b4cde">
+            <i-button type="primary" size="small" class="_i-button data-v-942b4cde"> 点击选择日期 </i-button>
+          </picker>
+        </view>
+      </i-col>
+      <i-col span="12" class="_i-col data-v-942b4cde">
+        <view class="_div data-v-942b4cde">
+          <picker value="{{region}}" range="{{regionArray}}" class="_picker data-v-942b4cde">
+            <i-button type="primary" size="small" class="_i-button data-v-942b4cde"> 点击选择地区 </i-button>
+          </picker>
+        </view>
+      </i-col>
+    </i-row>
+    <view class="_ul data-v-942b4cde">
+      <view wx:key="indu.name" key="{{indu.name}}" wx:for="{{indus}}" wx:for-index="index" wx:for-item="indu" class="_li data-v-942b4cde">
+        <i-row class="_i-row data-v-942b4cde">
+          <i-col offset="1" span="2" style="background-color: #dbdbdb" class="_i-col data-v-942b4cde">
+            <image src="/static/images/down_20x20.png" bindtap="handleProxy" style="width: 20px; height: 20px; padding-top: 5px" alt data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" class="_img data-v-942b4cde"></image>
+          </i-col>
+          <i-col i-class="table-li" span="19" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" class="_i-col data-v-942b4cde">{{indu.name}}</i-col>
+          <i-col wx:if="{{indu.show}}" span="20" class="_i-col data-v-942b4cde">
+            <view class="_ul data-v-942b4cde">
+              <view wx:key="enter.name" key="{{enter.name}}" class="_li data-v-942b4cde table-li" wx:for="{{indu.enterprise}}" wx:for-index="subIndex" wx:for-item="enter">
+                {{ enter.name }}
+              </view>
+            </view>
+          </i-col>
+        </i-row>
+      </view>
+    </view>
+  </view>
+</template>

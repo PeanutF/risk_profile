@@ -1,0 +1,31 @@
+@import "../../common/vendor.wxss";
+
+.message.data-v-b22bc2de {
+  color: black;
+  padding: 20rpx;
+  text-align: left;
+}
+.news-label.data-v-b22bc2de {
+  font-size: 30rpx;
+  text-align: left;
+  margin-bottom: 4rpx;
+}
+.news-text.data-v-b22bc2de {
+  font-size: 20rpx;
+  color: gray;
+  text-align: left;
+  margin-bottom: 4rpx;
+}
+._li.data-v-b22bc2de {
+  text-align: center;
+  margin-top: 10rpx;
+  padding-bottom: 10rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  border-bottom: solid 2rpx #4e9299;
+}
+._ul.data-v-b22bc2de {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  text-align: center;
+}

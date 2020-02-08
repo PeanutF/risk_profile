@@ -1,0 +1,24 @@
+<template name="64defed4">
+  <view class="_div data-v-17c75057">
+    <i-row class="_i-row data-v-17c75057">
+      <i-col span="16" offset="2" class="_i-col data-v-17c75057">
+        <view class="_h1 data-v-17c75057">
+          {{title}}
+        </view>
+      </i-col>
+    </i-row>
+    <view style="margin-top: 100px" class="_div data-v-17c75057">
+      <i-row class="_i-row data-v-17c75057">
+        <i-col span="12" offset="6" class="_i-col data-v-17c75057">
+          <i-button i-class="index-button" size="large" type="info" class="_i-button data-v-17c75057">舆情监控</i-button>
+        </i-col>
+        <i-col span="12" offset="6" class="_i-col data-v-17c75057">
+          <i-button i-class="index-button" size="large" type="primary" class="_i-button data-v-17c75057">风险预测</i-button>
+        </i-col>
+        <i-col span="12" offset="6" class="_i-col data-v-17c75057">
+          <i-button class="_i-button data-v-17c75057 index-button" size="large" type="success">产业分布</i-button>
+        </i-col>
+      </i-row>
+    </view>
+  </view>
+</template>

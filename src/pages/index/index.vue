@@ -5,17 +5,20 @@
         {{title}}
       </h1></i-col>
     </i-row>
-    <i-row>
-      <i-col span="12">
-        <i-button i-class="index-button" size="large" type="info">舆情监控</i-button>
-      </i-col>
-      <i-col span="12">
-        <i-button i-class="index-button" size="large" type="primary">风险预测</i-button>
-      </i-col>
-      <i-col span="12">
-        <i-button class="index-button" size="large" type="success">产业分布</i-button>
-      </i-col>
-    </i-row>
+    <div style="margin-top: 100px">
+      <i-row>
+        <i-col span="12" offset="6">
+          <i-button i-class="index-button" size="large" type="info">舆情监控</i-button>
+        </i-col>
+        <i-col span="12" offset="6">
+          <i-button i-class="index-button" size="large" type="primary">风险预测</i-button>
+        </i-col>
+        <i-col span="12" offset="6">
+          <i-button class="index-button" size="large" type="success">产业分布</i-button>
+        </i-col>
+      </i-row>
+    </div>
+
   </div>
 </template>
 

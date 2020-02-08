@@ -1,0 +1,1 @@
+<import src="/pages/consensus/consensus.vue.wxml" /><template is="faf0b0c0" data="{{ ...$root['0'], $root }}"/>

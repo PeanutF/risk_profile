@@ -1,0 +1,10 @@
+<template name="2a6c775c">
+  <view class="_div data-v-6f50f0cc">
+    <view class="_p data-v-6f50f0cc news-label">
+      {{label}}
+    </view>
+    <view class="_p data-v-6f50f0cc news-text">
+      {{text}}
+    </view>
+  </view>
+</template>

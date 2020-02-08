@@ -1,0 +1,6 @@
+@import "../../common/vendor.wxss";
+
+.index-button.data-v-17c75057 {
+  background-color: #4e9299;
+  height: 1000rpx;
+}

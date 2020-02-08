@@ -1,0 +1,9 @@
+@import "../../common/vendor.wxss";
+
+.table-li {
+  text-align: left;
+  margin-top: 10rpx;
+  padding-bottom: 10rpx;
+  margin-right: 40rpx;
+  background-color: #f1f1f1;
+}

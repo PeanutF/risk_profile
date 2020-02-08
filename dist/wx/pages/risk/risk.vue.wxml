@@ -1,0 +1,31 @@
+<import src="/components/consensusList.vue.wxml" /><template name="9a3a1aec">
+  <view class="_div data-v-b22bc2de container">
+    <i-row class="_i-row data-v-b22bc2de">
+      <i-col span="24" i-class="col-class" class="_i-col data-v-b22bc2de">
+        <view class="_div data-v-b22bc2de message">{{title}}</view>
+      </i-col>
+    </i-row>
+    <i-row class="_i-row data-v-b22bc2de">
+      <i-col span="12" class="_i-col data-v-b22bc2de">
+        <view class="_div data-v-b22bc2de">
+          <picker value="{{date}}" class="_picker data-v-b22bc2de">
+            <i-button type="primary" size="small" class="_i-button data-v-b22bc2de"> 点击选择日期 </i-button>
+          </picker>
+        </view>
+      </i-col>
+      <i-col span="12" class="_i-col data-v-b22bc2de">
+        <view class="_div data-v-b22bc2de">
+          <picker value="{{region}}" range="{{regionArray}}" class="_picker data-v-b22bc2de">
+            <i-button type="primary" size="small" class="_i-button data-v-b22bc2de"> 点击选择地区 </i-button>
+          </picker>
+        </view>
+      </i-col>
+    </i-row>
+    <view class="_div data-v-b22bc2de container">
+      <view class="_ul data-v-b22bc2de">
+        <view class="_li data-v-b22bc2de">舆情列表</view>
+        <view wx:key="data1.news" key="{{data1.news}}" wx:for="{{tableData}}" wx:for-index="index" wx:for-item="data1" class="_li data-v-b22bc2de"><template bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" data="{{...$root[$kk+'7_'+index], $root}}" is="16be4df9"></template></view>
+      </view>
+    </view>
+  </view>
+</template>

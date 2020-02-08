@@ -1,0 +1,15 @@
+@import "../../common/vendor.wxss";
+
+._li.data-v-2dbf74e1 {
+  text-align: center;
+  margin-top: 10rpx;
+  padding-bottom: 10rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  border-bottom: solid 2rpx #4e9299;
+}
+._ul.data-v-2dbf74e1 {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  text-align: center;
+}

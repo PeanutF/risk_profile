@@ -1,0 +1,5 @@
+<template name="502bb5fb">
+  <view class="_div data-v-4c301241 click-counter">
+    <view class="_div data-v-4c301241 counter-num">次数：{{num}}</view> <button class="_button data-v-4c301241 counter-btn" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">点我呀！</button> <button class="_button data-v-4c301241 counter-reset-btn" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">清零</button>
+  </view>
+</template>
