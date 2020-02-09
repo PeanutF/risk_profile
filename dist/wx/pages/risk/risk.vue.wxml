@@ -23,8 +23,8 @@
     </i-row>
     <view class="_div data-v-b22bc2de container">
       <view class="_ul data-v-b22bc2de">
-        <view class="_li data-v-b22bc2de">舆情列表</view>
-        <view wx:key="data1.news" key="{{data1.news}}" wx:for="{{tableData}}" wx:for-index="index" wx:for-item="data1" class="_li data-v-b22bc2de"><template bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" data="{{...$root[$kk+'7_'+index], $root}}" is="16be4df9"></template></view>
+        <view class="_li data-v-b22bc2de">舆情列表（点击可以查看分析情况）</view>
+        <view wx:key="data1.news" key="{{data1.news}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{tableData}}" wx:for-index="index" wx:for-item="data1" class="_li data-v-b22bc2de"><template data="{{...$root[$kk+'7_'+index], $root}}" is="16be4df9"></template></view>
       </view>
     </view>
   </view>

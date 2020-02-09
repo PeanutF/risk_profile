@@ -1,5 +1,14 @@
 <template>
   <div>
+    <i-row>
+      <i-col span="16" offset="4">
+        <i-button type="primary">
+          新增舆情
+        </i-button>
+      </i-col>
+    </i-row>
+
+
     <ul >
       <li>舆情列表</li>
       <li v-for="data1 in default_news" :key="data1.news">

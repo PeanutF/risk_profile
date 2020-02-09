@@ -1,0 +1,15 @@
+@import "../../common/vendor.wxss";
+
+.table-ul.data-v-17c05bd9 {
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  background-color: #f1f1f1;
+}
+.table-li.data-v-17c05bd9 {
+  padding-top: 8rpx;
+  padding-bottom: 8rpx;
+  margin-top: 2rpx;
+  margin-bottom: 2rpx;
+  background-color: #f1f1f1;
+  font-size: small;
+}

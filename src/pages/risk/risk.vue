@@ -1,6 +1,9 @@
 <template>
+
   <!-- <i-button type="primary" bind:click="handleClick">这是一个按钮</i-button> -->
   <div class="container" >
+
+
     <i-row>
       <i-col span="24" i-class="col-class">
         <div class="message">{{title}}</div>
@@ -34,9 +37,9 @@
 
     <div class="container">
       <ul >
-        <li>舆情列表</li>
-        <li v-for="data1 in tableData" :key="data1.news">
-          <consensusList :label="data1.label" :text="data1.news" @click="data1.id">
+        <li>舆情列表（点击可以查看分析情况）</li>
+        <li v-for="data1 in tableData" :key="data1.news" @click="gotoAnalyse(data1.id)">
+          <consensusList :label="data1.label" :text="data1.news" >
 
           </consensusList>
         </li>
@@ -74,6 +77,7 @@ export default {
       this.msg = 'Clicked!!!!!!'
     },
     gotoAnalyse (newsId) {
+      console.log('clicked!!')
       wx.navigateTo({url: '/pages/analyse/main?id=' + newsId})
     }
   }

@@ -5,7 +5,8 @@
     "pages/logs/main",
     "pages/counter/main",
     "pages/risk/main",
-    "pages/enterpriseInfo/main"
+    "pages/enterpriseInfo/main",
+    "pages/analyse/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

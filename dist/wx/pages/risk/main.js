@@ -1,6 +1,6 @@
 require("../../common/manifest.js")
 require("../../common/vendor.js")
-global.webpackJsonpMpvue([4],{
+global.webpackJsonpMpvue([3],{
 
 /***/ 44:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -132,6 +132,9 @@ if (false) {(function () {
 //
 //
 //
+//
+//
+//
 
 
 
@@ -161,6 +164,7 @@ if (false) {(function () {
       this.msg = 'Clicked!!!!!!';
     },
     gotoAnalyse: function gotoAnalyse(newsId) {
+      console.log('clicked!!');
       wx.navigateTo({ url: '/pages/analyse/main?id=' + newsId });
     }
   }
@@ -224,18 +228,22 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     }
   }, [_vm._v("\n            点击选择地区\n          ")])], 1)], 1)])], 1), _vm._v(" "), _c('div', {
     staticClass: "container"
-  }, [_c('ul', [_c('li', [_vm._v("舆情列表")]), _vm._v(" "), _vm._l((_vm.tableData), function(data1, index) {
+  }, [_c('ul', [_c('li', [_vm._v("舆情列表（点击可以查看分析情况）")]), _vm._v(" "), _vm._l((_vm.tableData), function(data1, index) {
     return _c('li', {
-      key: data1.news
+      key: data1.news,
+      attrs: {
+        "eventid": '0_' + index
+      },
+      on: {
+        "click": function($event) {
+          _vm.gotoAnalyse(data1.id)
+        }
+      }
     }, [_c('consensusList', {
       attrs: {
         "label": data1.label,
         "text": data1.news,
-        "eventid": '0_' + index,
         "mpcomid": '7_' + index
-      },
-      on: {
-        "click": data1.id
       }
     })], 1)
   })], 2)], 1)], 1)

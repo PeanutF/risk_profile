@@ -1,0 +1,64 @@
+<template name="0f26f558">
+  <view class="_div data-v-17c05bd9">
+    <i-row class="_i-row data-v-17c05bd9">
+      <view class="_div data-v-17c05bd9">
+        <image src="/static/images/back.png" style="width: 30px; height: 30px; padding-left: 20px" alt bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_img data-v-17c05bd9"></image>
+      </view>
+    </i-row>
+    <i-row class="_i-row data-v-17c05bd9">
+      <i-col span="20" offset="2" class="_i-col data-v-17c05bd9">
+        <view style="text-align: center;font-size: large" class="_div data-v-17c05bd9">
+          <view class="_h1 data-v-17c05bd9">{{newsTitle}}</view>
+        </view>
+      </i-col>
+      <i-row class="_i-row data-v-17c05bd9">
+        <i-col span="20" offset="2" style="text-align: center; margin-top: 4px;" class="_i-col data-v-17c05bd9">
+          <view style="color: gray" class="_h3 data-v-17c05bd9">{{region}}</view>
+        </i-col>
+      </i-row>
+    </i-row>
+    <i-row class="_i-row data-v-17c05bd9">
+      <image src="/static/images/statistic.jpg" class="_img data-v-17c05bd9"></image>
+    </i-row>
+    <i-row class="_i-row data-v-17c05bd9">
+      <view style="text-align: center; margin-left: 20px; margin-right: 20px" class="_ul data-v-17c05bd9">
+        <view class="_li data-v-17c05bd9 table-ul">
+          <i-row class="_i-row data-v-17c05bd9">
+            <i-col span="8" class="_i-col data-v-17c05bd9">
+              <view class="_p data-v-17c05bd9">产业</view>
+            </i-col>
+            <i-col span="8" class="_i-col data-v-17c05bd9">
+              <view class="_p data-v-17c05bd9">影响系数</view>
+            </i-col>
+          </i-row>
+        </view>
+        <view wx:key="indu.name" key="{{indu.name}}" class="_li data-v-17c05bd9 table-li" wx:for="{{indus}}" wx:for-index="index" wx:for-item="indu">
+          <i-row bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" class="_i-row data-v-17c05bd9">
+            <i-col span="8" class="_i-col data-v-17c05bd9">
+              <view class="_p data-v-17c05bd9">{{indu.name}}</view>
+            </i-col>
+            <i-col span="8" class="_i-col data-v-17c05bd9">
+              <view class="_p data-v-17c05bd9">{{indu.influence}}</view>
+            </i-col>
+          </i-row>
+          <i-row wx:if="{{indu.show}}" span="20" class="_i-row data-v-17c05bd9">
+            <view class="_ul data-v-17c05bd9">
+              <i-row wx:key="subIndex" key="{{subIndex}}" wx:for="{{indu.enterprise}}" wx:for-index="subIndex" wx:for-item="enter" class="_i-row data-v-17c05bd9">
+                <i-col span="8" class="_i-col data-v-17c05bd9">
+                  <view class="_li data-v-17c05bd9 table-li">
+                    {{ enter.name }}
+                  </view>
+                </i-col>
+                <i-col span="8" class="_i-col data-v-17c05bd9">
+                  <view class="_li data-v-17c05bd9 table-li">
+                    {{ enter.influence }}
+                  </view>
+                </i-col>
+              </i-row>
+            </view>
+          </i-row>
+        </view>
+      </view>
+    </i-row>
+  </view>
+</template>

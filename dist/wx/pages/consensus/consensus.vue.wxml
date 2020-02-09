@@ -1,8 +1,13 @@
 <import src="/components/consensusList.vue.wxml" /><template name="faf0b0c0">
   <view class="_div data-v-2dbf74e1">
+    <i-row class="_i-row data-v-2dbf74e1">
+      <i-col span="16" offset="4" class="_i-col data-v-2dbf74e1">
+        <i-button type="primary" class="_i-button data-v-2dbf74e1"> 新增舆情 </i-button>
+      </i-col>
+    </i-row>
     <view class="_ul data-v-2dbf74e1">
       <view class="_li data-v-2dbf74e1">舆情列表</view>
-      <view wx:key="data1.news" key="{{data1.news}}" wx:for="{{default_news}}" wx:for-index="index" wx:for-item="data1" class="_li data-v-2dbf74e1"><template data="{{...$root[$kk+'0_'+index], $root}}" is="16be4df9"></template></view>
+      <view wx:key="data1.news" key="{{data1.news}}" wx:for="{{default_news}}" wx:for-index="index" wx:for-item="data1" class="_li data-v-2dbf74e1"><template data="{{...$root[$kk+'3_'+index], $root}}" is="16be4df9"></template></view>
     </view>
   </view>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <i-row>
-      <i-col span="16" offset="2"><h1>
+      <i-col span="24" style="padding-top: 200px;text-align: center"><h1>
         {{title}}
       </h1></i-col>
     </i-row>
@@ -11,10 +11,10 @@
           <i-button i-class="index-button" size="large" type="info">舆情监控</i-button>
         </i-col>
         <i-col span="12" offset="6">
-          <i-button i-class="index-button" size="large" type="primary">风险预测</i-button>
+          <i-button i-class="index-button" size="large" type="primary">产业风险评估</i-button>
         </i-col>
         <i-col span="12" offset="6">
-          <i-button class="index-button" size="large" type="success">产业分布</i-button>
+          <i-button class="index-button" size="large" type="success">风险产业链分布</i-button>
         </i-col>
       </i-row>
     </div>

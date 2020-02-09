@@ -1,0 +1,1 @@
+<import src="/pages/analyse/analyse.vue.wxml" /><template is="0f26f558" data="{{ ...$root['0'], $root }}"/>
